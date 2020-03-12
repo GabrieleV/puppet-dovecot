@@ -106,7 +106,7 @@ class dovecot (
   if $include_sysdefault  {
     concat::fragment { 'dovecot: include system defaults':
       target  => "${config_path}/${main_config_file}",
-      content => '!include conf.d/*',
+      content => "!include conf.d/*.conf\n!include_try /usr/share/dovecot/protocols.d/*.protocol",
       order   => '00',
     }
   }
