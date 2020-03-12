@@ -1,7 +1,7 @@
 # Default parameters
 class dovecot::params {
 
-  $packages         = ['dovecot-core']
+  $packages         = ['dovecot-core','dovecot-mysql']
 
   $service_name     = 'dovecot'
   $main_config_file = 'dovecot.conf'

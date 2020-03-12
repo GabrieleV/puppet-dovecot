@@ -20,6 +20,17 @@ The purpose of this module is to configure dovecot.
 
 The all available options for classes and defines are documented in the header of the class/define files. See there for any details.
 
+Example `common.yaml` configuration:
+
+````
+---
+
+dovecot::install::packages:
+    - 'dovecot-imapd'
+
+
+````
+
 ## Contributing
 
 Please report bugs and feature request using GitHub issue tracker.
