@@ -27,8 +27,7 @@ Example `common.yaml` configuration:
 
 dovecot::install::packages:
     - 'dovecot-imapd'
-
-
+    - 'dovecot-mysql'
 ````
 
 ## Contributing
